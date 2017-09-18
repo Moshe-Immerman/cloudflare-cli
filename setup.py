@@ -2,7 +2,8 @@ import os
 from setuptools import find_packages, setup
 
 requirements = [
-    'cloudflare'
+    'cloudflare',
+    'dnspython'
 ]
 
 if os.name == 'posix':
@@ -11,7 +12,7 @@ if os.name == 'posix':
 
 setup(name = "cloudflare-cli",
     install_requires = requirements,
-    version = "0.3",
+    version = "0.4",
     description = "A command line tool for managing vCenter and ESXi servers",
     author = "Moshe Immerman",
     author_email = 'name.surname@gmail.com',
